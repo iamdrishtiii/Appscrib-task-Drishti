@@ -7,35 +7,42 @@ export default function Footer() {
        return (
               <footer className="bg-black text-white px-10 py-10 w-full">
                      {/* Top Section */}
-                     <div className=" mx-auto grid md:grid-cols-3 gap-8 border-b border-white pb-6">
+                     <div className=" mx-auto grid md:grid-cols-2 gap-8 border-b border-white pb-6 flex r">
 
                             {/* Subscribe */}
-                            <div>
-                                   <h3 className="font-semibold mb-2 text-sm">BE THE FIRST TO KNOW</h3>
-                                   <p className="text-xs mb-3">Sign up for updates from mettā muse.</p>
-                                   <div className="flex">
-                                          <input
-                                                 type="email"
-                                                 placeholder="Enter your e-mail..."
-                                                 className="w-full p-2 text-black bg-white text-sm outline-none"
-                                          />
-                                          <button className="bg-gray-800 px-4 py-2 text-sm">SUBSCRIBE</button>
+                            <div className="flex flex-row">
+                                   <div className="lg:w-1/2"></div>
+                                   <div className="lg:w-1/2">
+                                          <h3 className="font-semibold mb-2 text-sm">BE THE FIRST TO KNOW</h3>
+                                          <p className="text-xs mb-3">Sign up for updates from mettā muse.</p>
+                                          <div className="flex">
+                                                 <input
+                                                        type="email"
+                                                        placeholder="Enter your e-mail..."
+                                                        className="w-full p-2 text-black bg-white text-sm outline-none"
+                                                 />
+                                                 <button className="bg-gray-800 px-4 py-2 text-sm">SUBSCRIBE</button>
+                                          </div>
                                    </div>
                             </div>
 
-                            {/* Contact Info */}
-                            <div>
-                                   <h3 className="font-semibold mb-2 text-sm">CONTACT US</h3>
-                                   <p className="text-xs">+44 221 133 5360</p>
-                                   <p className="text-xs mb-4">customercare@mettamuse.com</p>
 
-                                   <h3 className="font-semibold mb-2 text-sm">CURRENCY</h3>
-                                   <p className="flex items-center gap-1 text-xs">
-                                          🇺🇸 USD
-                                   </p>
-                                   <p className="text-[10px] mt-1">
-                                          Transactions will be completed in Euros and a currency reference is available on hover.
-                                   </p>
+                            {/* Contact Info */}
+                            <div className="flex flex-row">
+                                   <div className="lg:w-1/2">
+                                          <h3 className="font-semibold mb-2 text-sm">CONTACT US</h3>
+                                          <p className="text-xs">+44 221 133 5360</p>
+                                          <p className="text-xs mb-4">customercare@mettamuse.com</p>
+
+                                          <h3 className="font-semibold mb-2 text-sm">CURRENCY</h3>
+                                          <p className="flex items-center gap-1 text-xs">
+                                                 🇺🇸 USD
+                                          </p>
+                                          <p className="text-[10px] mt-1">
+                                                 Transactions will be completed in Euros and a currency reference is available on hover.
+                                          </p>
+                                   </div>
+                                   <div className="lg:w-1/2"></div>
                             </div>
                      </div>
 

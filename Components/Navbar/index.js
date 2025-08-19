@@ -19,7 +19,7 @@ export default function Navbar() {
 
        return (
               <>
-                     <header className="flex flex-col sm:items-center border-b border-gray-300 py-4 relative">
+                     <header className="flex flex-col sm:items-center border-b border-gray-300 py-4 relative shadow-xl  sticky top-0 bg-white">
                             {/* Left Logo Icon */}
 
                             <div className="absolute left-1 flex items-center gap-3">
@@ -95,20 +95,18 @@ export default function Navbar() {
                                    ))}
                             </div> */}
 
-                            <nav className="font-semibold text-sm duration-300 flex flex-row gap-2 sm:gap-8 mt-3" >
+                            <nav className="font-semibold text-sm duration-300 flex flex-row gap-4 sm:gap-8 mt-3" >
                                    <Link href="/" className="hover:text-blue-500">SHOP</Link>
-                                   <Link href="/Skills" className="hover:text-blue-500">SKILLS</Link>
-                                   <Link href="/Stories" className="hover:text-blue-500">STORIES</Link>
                                    <Link href="/About" className="hover:text-blue-500">ABOUT</Link>
                                    <Link href="/Contact" className="hover:text-blue-500">CONTACT</Link>
                             </nav>
 
                      </header >
 
-                     <div className=" flex justify-center pt-5 px-4" >
+                     <div className=" flex justify-center pt-8 px-4 " >
                             <div className="flex flex-col ">
-                                   <p className="text-lg sm:text-2xl flex justify-center">DISCOVER OUR PRODUCTS</p>
-                                   <p className="w-[280px] sm:w-[600px]  ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sunt reprehenderit sint quibusdam, tempora consectetur libero possimus nesciunt fugit officiis iste dolore.</p>
+                                   <p className="text-lg sm:text-2xl flex justify-center font-semibold">DISCOVER OUR PRODUCTS</p>
+                                   <p className="w-[280px] sm:w-[600px] text-center text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sunt reprehenderit sint quibusdam, tempora consectetur libero possimus nesciunt fugit officiis iste dolore.</p>
                             </div></div>
 
               </>
